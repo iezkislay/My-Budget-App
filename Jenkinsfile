@@ -16,7 +16,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 // Run the Docker build command
-                sh 'docker build -t budget-app /var/lib/jenkins/workspace/${JOB_NAME}/My-Budget-App'
+                sh 'docker build -t budget-app /var/lib/jenkins/workspace/Budget-App-Pipeline'
             }
         }
         stage('Run Docker Container') {
